@@ -34,9 +34,10 @@ jobs:
           fi
 
       - name: 同步到Gitee
-        uses: wearerequired/git-mirror-action@master
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.GITEE_SSH_KEY }}
-        with:
-          source-repo: git@github.com:${{ github.repository }}.git
-          destination-repo: git@gitee.com:flag12321/tvbox.git
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.GITEE_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -t ed25519 gitee.com >> ~/.ssh/known_hosts 2>/dev/null
+          git remote add gitee git@gitee.com:flag12321/tvbox.git 2>/dev/null || true
+          git push gitee HEAD:master --force
