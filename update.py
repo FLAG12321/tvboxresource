@@ -123,11 +123,11 @@ def main():
         singles = parse_multi_source(src["url"])
         if singles:
             valid_multi.append(src)
-            print(f"  ✓ 获取到 {len(singles)} 个单仓")
+            print(f"  [OK] 获取到 {len(singles)} 个单仓")
             for s in singles:
                 all_single_urls.append(s)
         else:
-            print(f"  ✗ 无法解析")
+            print(f"  [FAIL] 无法解析")
         time.sleep(0.3)
 
     # 加入直接单仓源
@@ -159,10 +159,10 @@ def main():
             configs.append(cfg)
             valid_singles.append(s)
             sites_count = len(cfg.get("sites", []))
-            print(f"  ✓ sites={sites_count}")
+            print(f"  [OK] sites={sites_count}")
         else:
             failed_singles.append(s)
-            print(f"  ✗ 失败")
+            print(f"  [FAIL] 失败")
         time.sleep(0.3)
 
     # 第三步：合并去重
@@ -176,8 +176,8 @@ def main():
     with open("merged.json", "w", encoding="utf-8") as f:
         json.dump(merged, f, ensure_ascii=False, indent=2)
 
-    # 输出 multi.json（可用的多仓列表，保持兼容）
-    result = {"urls": valid_multi + [s for s in SINGLE_SOURCES if s in valid_singles]}
+    # 输出 multi.json（完整源列表，不依赖验证结果）
+    result = {"urls": MULTI_SOURCES + SINGLE_SOURCES}
     with open("multi.json", "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
