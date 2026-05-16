@@ -1,16 +1,3 @@
 {
-  "urls": [
-    {
-      "url": "https://www.iyouhun.com/tv/dc",
-      "name": "有魂多仓"
-    },
-    {
-      "url": "http://qxyc.cc/自用测试",
-      "name": "青霞源"
-    },
-    {
-      "url": "https://9280.kstore.space/wex.json",
-      "name": "WEX源"
-    }
-  ]
+  "urls": []
 }
