@@ -26,6 +26,8 @@ SINGLE_SOURCES = [
     {"url": "https://gh-proxy.net/https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/XC.json", "name": "YourSmile"},
     {"url": "http://www.饭太硬.com/tv", "name": "饭太硬com"},
     {"url": "http://ok321.top/tv", "name": "OK321"},
+    {"url": "https://9280.kstore.vip/newwex.json", "name": "放牛娃新1"},
+    {"url": "https://9280.kstore.space/newwex.json", "name": "放牛娃新2"}
 ]
 
 
