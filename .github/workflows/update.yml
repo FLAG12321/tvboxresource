@@ -3,6 +3,9 @@ name: 自动更新TVBox多仓源并同步Gitee
 on:
   schedule:
     - cron: '0 */6 * * *'
+  push:
+    branches: [master]
+    paths: [update.py]
   workflow_dispatch:
 
 permissions:
