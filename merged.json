@@ -13,7 +13,7 @@
     },
     {
       "key": "Doubana",
-      "name": "🐮【更新日期:20260819】🐮",
+      "name": "🐮【更新日期:20260820】🐮",
       "type": 3,
       "api": "csp_NewDouBanGuard",
       "indexs": 1,
@@ -181,24 +181,6 @@
       "changeable": 0
     },
     {
-      "key": "WexV6DaShiXiong",
-      "name": "💥师兄┃秒播💥",
-      "type": 3,
-      "api": "csp_WexV6DaShiXiongGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0
-    },
-    {
-      "key": "WexV6TeGou",
-      "name": "💥太狗┃秒播💥",
-      "type": 3,
-      "api": "csp_WexV6TeGouGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0
-    },
-    {
       "key": "WexYiYs",
       "name": "💥伊影┃秒播💥",
       "type": 3,
@@ -345,22 +327,6 @@
       "type": 3,
       "类型": "短剧",
       "api": "csp_DuanJuWeiGuanGuard",
-      "searchable": 1,
-      "changeable": 0
-    },
-    {
-      "key": "AnimeFanShu",
-      "name": "🤡番薯┃动漫🤡",
-      "type": 3,
-      "api": "csp_AnimeFanShuGuard",
-      "searchable": 1,
-      "changeable": 0
-    },
-    {
-      "key": "AnimeMiaoWuGuard",
-      "name": "🤡喵呜┃动漫🤡",
-      "type": 3,
-      "api": "csp_AnimeMiaoWuGuard",
       "searchable": 1,
       "changeable": 0
     },
